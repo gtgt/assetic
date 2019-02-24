@@ -1,8 +1,8 @@
 {
-    "name": "sanpi/assetic",
+    "name": "gtgt/assetic",
     "description": "Asset Management for PHP",
     "keywords": [ "assets", "compression", "minification" ],
-    "homepage": "https://github.com/sanpi/assetic",
+    "homepage": "https://github.com/gtgt/assetic",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -18,9 +18,6 @@
     },
     "conflict": {
         "twig/twig": "<1.27"
-    },
-    "replace": {
-        "kriswallsmith/assetic": "self.version"
     },
     "require-dev": {
         "leafo/lessphp": "^0.5",
@@ -39,6 +36,9 @@
         "twig/twig": "^2.0",
         "yfix/packager": "dev-master#d358c2a"
     },
+    "replace": {
+        "kriswallsmith/assetic": "self.version"
+    },
     "suggest": {
         "twig/twig": "Assetic provides the integration with the Twig templating engine",
         "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
@@ -53,5 +53,10 @@
     },
     "config": {
         "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.5-dev"
+        }
     }
 }
